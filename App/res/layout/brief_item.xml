@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3.0" 
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/sub_child_item_selector">
+    
+	<TextView 
+	    android:id="@+id/tv_buildingNum"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1.0"
+	    android:gravity="center"
+	    style="@style/child_text_style"
+	    android:layout_gravity="center_vertical"
+	    android:padding="3dp"/>
+	<TextView 
+	    android:id="@+id/tv_orderSum"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1.0"
+	    android:gravity="center"
+	    style="@style/child_text_style"
+	    android:layout_gravity="center_vertical"
+	    android:padding="3dp"/>
+	<TextView 
+	    android:id="@+id/tv_moneySum"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1.0"
+	    android:gravity="center"
+	    android:padding="3dp"
+	    style="@style/child_text_style"
+	    android:layout_gravity="center_vertical"/>
+</LinearLayout>

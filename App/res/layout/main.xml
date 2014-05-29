@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main" >
+   <!--  <RelativeLayout 
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:visibility="gone"
+        >
+        <TextView 
+	        android:id="@+id/top_hint"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/wait_printed_num"
+	        />
+        <TextView 
+            android:id="@+id/order_received"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+ -->
+   <!--  <RelativeLayout 
+	    android:id="@+id/top"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/top_bg"
+	    android:layout_alignParentTop="true">
+	    <Button 
+	        android:id="@+id/history_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_centerVertical="true"
+	        android:visibility="gone"
+	        android:background="@drawable/history_btn_selector"/>
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/white"
+	        android:textSize="23sp" />
+	</RelativeLayout> -->
+	
+    <!-- The PullToRefreshExpandableListView replaces a standard ExpandableListView widget. -->
+    <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_expandable_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ptr:ptrHeaderBackground="@android:color/darker_gray"
+        ptr:ptrHeaderTextColor="@android:color/white"
+        ptr:ptrMode="pullDownFromTop"
+        ptr:ptrDrawable="@drawable/base_loading_small_icon" 
+        ptr:ptrShowIndicator="false"
+       />
+    <LinearLayout 
+        android:id="@+id/view_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:orientation="vertical"/>
+
+</RelativeLayout>

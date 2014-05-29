@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+        android:background="@drawable/order_detail_item_bg" 
+        >
+        <TextView 
+	        android:id="@+id/title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="6dp"
+	        android:layout_marginBottom="4dp"/>
+	    <ImageView
+	        android:id="@+id/iv"
+	        android:layout_width="match_parent"
+	        android:layout_height="2dp"
+	        android:background="@color/color_gray"
+	        android:layout_below="@id/title"
+	        />
+    
+	    <LinearLayout 
+	        android:id="@+id/layout_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/iv"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:weightSum="4.0">
+	        <TextView 
+		        android:id="@+id/money"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.0"
+	        />
+	    	<TextView android:id="@+id/file_msg"
+	    	    android:layout_width="0dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="3.0"/>
+		    <!-- <TextView 
+		        android:id="@+id/side"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.0"
+		        />
+		    
+		    <TextView 
+		        android:id="@+id/staple_num"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.0"/>
+		    
+		    <TextView 
+		        android:id="@+id/file_others"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.0"/> -->
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/layout_2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layout_1"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:weightSum="4.0">
+	        <TextView 
+		        android:id="@+id/user_name"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.0"
+	        />
+	    
+		    <TextView 
+		        android:id="@+id/phone_num"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.5"
+		        android:autoLink="phone"/>
+		    <TextView 
+		        android:id="@+id/send_time"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.5"/>
+	    </LinearLayout>
+		    
+	    
+	    
+	    <TextView 
+	        android:id="@+id/note1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/layout_2"
+	        android:text="@string/note"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="15dp"
+	        android:paddingBottom="15dp"/>
+	    
+	    <TextView 
+	        android:id="@+id/note"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/note1"
+	        android:layout_below="@id/layout_2"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="10dp"
+	        android:paddingBottom="15dp"/>
+	    
+    
+   <!--  <TableLayout
+        android:id="@+id/tablelayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/iv"
+	    android:padding="5dp">
+
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/money"
+	            android:padding="3dp" />
+	        <TextView
+	            android:id="@+id/side"
+	            android:padding="3dp" />
+	        <TextView
+	            android:id="@+id/staple_sum"
+	            android:padding="3dip" />
+	    </TableRow>
+	
+	    <TableRow>
+	        <TextView
+	            android:id="@+id/user_name"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/phone_num"
+	            android:padding="3dip" />
+	    </TableRow>
+	
+	    <TableRow>
+	        <TextView
+	            android:text="@string/note"
+	            android:padding="3dip" />
+	        <TextView
+	            android:id="@+id/note"
+	            android:padding="3dip" />
+	    </TableRow>
+	</TableLayout> -->
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

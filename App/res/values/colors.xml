@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colors -->
+    <color name="color_black">#000000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_gray">#736F6E</color>
+    <color name="color_blue_sky">#5e7d87</color>
+    <color name="color_gray_light">#99C9C9C9</color>
+    <color name="color_black_light">#99000000</color>
+    <color name="text_color_deep">#764d2d</color>
+    <color name="text_color_light">#997A65</color>
+    <color name="red">#FF0000</color>
+    
+    <color name="Lightcyan">#e0ffff</color>
+    
+    <color name="white">#ffffff</color>
+
+    <!-- Holo blue color -->
+    <color name="holo_blue">#33b5e5</color>
+
+    <!-- Holo purple color -->
+    <color name="holo_purple">#aa66cc</color>
+
+    <!-- Holo green color -->
+    <color name="holo_green">#99cc00</color>
+
+    <!-- Holo orange color -->
+    <color name="holo_orange">#ffbb33</color>
+
+    <!-- Holo red color -->
+    <color name="holo_red">#ff4444</color>
+    
+    <color name="sea_green">#38C4A9</color>
+    <color name="deep_green">#109877</color>
+    <color name="unable_color">#82d7c0</color>
+    <color name="unable_text_color">#c7ebe1</color>
+    
+    <color name="group_nor_color">#F7F7F7</color>
+    <color name="group_pressed_color">#E9EBE8</color>
+    <color name="child_nor_color">#FFFFFF</color>
+    <color name="child_pressed_color">#F7F7F7</color>
+</resources>

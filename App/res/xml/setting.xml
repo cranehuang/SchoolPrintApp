@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory >
+        <SwitchPreference android:title="@string/setting_push_message" android:key="pref_push_key" android:defaultValue="true"/>
+        <Preference  android:title="@string/setting_modify_password" android:key="pref_modify_password_key" />
+       	<Preference  android:title="@string/setting_update" android:key="pref_update_key"/>
+        <Preference  android:title="@string/setting_feedback" android:key="pref_feedback_key" />
+        <Preference  android:title="@string/setting_logout" android:key="pref_logout_key" />
+   		
+        </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetailActivity" 
+    android:background="@color/color_gray_light">
+
+    <!-- <RelativeLayout 
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:layout_alignParentTop="true">
+        <Button 
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_btn_selector"
+            android:layout_margin="5dp"/>
+        <TextView
+	        android:id="@+id/title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/white"
+	        android:text="@string/order_detail"
+	        android:textSize="23sp" />
+    </RelativeLayout>
+     -->
+    <ListView
+        android:id="@+id/detail_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:divider="@null"
+        />
+    
+    <ProgressBar
+   		android:id="@+id/loadingProgress"
+   		style="?android:attr/progressBarStyleLarge"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"        
+   		android:layout_centerInParent="true"
+   		android:visibility="gone"       		
+        	/>      
+
+</RelativeLayout>

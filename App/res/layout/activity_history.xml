@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity" >
+    
+  <!--   <RelativeLayout 
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg">
+        <Button 
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/back_btn_selector"
+            android:textColor="@color/color_white"
+            />
+        <TextView android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成情况"
+            android:textColor="@color/color_white"
+            android:textSize="23sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout> -->
+
+     <!-- The PullToRefreshExpandableListView replaces a standard ExpandableListView widget. -->
+  <!--   <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_expandable_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout"
+        ptr:ptrHeaderBackground="@android:color/darker_gray"
+        ptr:ptrHeaderTextColor="@android:color/white"
+        ptr:ptrMode="pullUpFromBottom"
+        ptr:ptrDrawable="@drawable/android" 
+        ptr:ptrShowIndicator="false"
+       /> -->
+       <ExpandableListView 
+           android:id="@+id/listview_history"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           />
+    
+   <!--  <ProgressBar 
+        android:id="@+id/loadingPBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style = "@style/CustomProgressStyle"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progressbar_bg"/> -->
+
+</RelativeLayout>

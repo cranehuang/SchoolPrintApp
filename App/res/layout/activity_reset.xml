@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res/com.xiaoyintong.app"
+    tools:context=".ResetActivity" >
+
+   <!--  <TextView
+        android:id="@+id/tv_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/old_password"
+        />
+    
+    <EditText
+        android:id="@+id/old_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@id/tv_old"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/old_pw_hint"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_old"
+        android:layout_marginLeft="10dp"
+        android:text="@string/new_password"
+        />
+    <EditText
+        android:id="@+id/new_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/old_pw"
+        android:layout_toLeftOf="@id/tv_new"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/new_pw_hint"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_new"
+        android:layout_marginLeft="10dp"
+        android:text="@string/verify_new_pw"
+        />
+    <EditText
+        android:id="@+id/verify_new_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/new_pw"
+        android:layout_toLeftOf="@id/tv_3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/verify_new_pw_hint"
+        android:inputType="textPassword"
+        /> -->
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true">
+        <com.andreabaccega.widget.FormEditText
+		           app:emptyErrorString="@string/empty_error"
+		           android:id="@+id/old_pw"
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_centerHorizontal="true"
+		           android:layout_marginTop = "5dp"
+		           android:layout_marginLeft="10dp"
+		           android:layout_marginRight="10dp"
+		           android:padding="20dp"
+		           android:hint="@string/old_password"
+		           android:inputType="textPassword"
+		           android:background="@drawable/background_login_div_bg"
+		           /> 
+		    
+		    <com.andreabaccega.widget.FormEditText
+		           app:emptyErrorString="@string/empty_error"
+		           android:id="@+id/new_pw"
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_centerHorizontal="true"
+		           android:layout_below="@id/old_pw"
+		           android:layout_marginTop = "5dp"
+		           android:layout_marginLeft="10dp"
+		           android:layout_marginRight="10dp"
+		           android:padding="20dp"
+		           android:hint="@string/new_password"
+		           android:inputType="textPassword"
+		           android:background="@drawable/background_login_div_bg"
+		           /> 
+		           
+		    <com.andreabaccega.widget.FormEditText
+		           app:emptyErrorString="@string/empty_error"
+		           android:id="@+id/verify_new_pw"
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:layout_centerHorizontal="true"
+		           android:layout_below="@id/new_pw"
+		           android:layout_marginTop="5dp"
+		           android:layout_marginLeft="10dp"
+		           android:layout_marginRight="10dp"
+		           android:padding="20dp"
+		           android:hint="@string/verify_new_pw"
+		           android:inputType="textPassword"
+		           android:background="@drawable/background_login_div_bg"
+		           /> 
+        
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/yes_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/color_white"
+        android:text="@string/yes"
+        android:background="@drawable/login_btn_selector"
+        />
+
+</RelativeLayout>

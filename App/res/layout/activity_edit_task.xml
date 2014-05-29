@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTask" >
+	<RelativeLayout 
+	    android:id="@+id/top"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/top_bg"
+	    android:layout_alignParentTop="true">
+	    <Button 
+	        android:id="@+id/backBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_centerVertical="true"
+	        android:text="@string/back"/>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="@string/add_task"
+	        android:textColor="@color/white"
+	        android:textSize="23sp" />
+	</RelativeLayout>
+	<RelativeLayout
+	    android:id="@+id/bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/bottom_bg">
+	    <Button
+	        android:id="@+id/yesBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_margin="5dp"
+	        android:text="@string/yes"/>
+	</RelativeLayout>
+	
+    <ExpandableListView
+        android:id="@+id/lv_agent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:groupIndicator="@null"
+         />
+    
+
+</RelativeLayout>

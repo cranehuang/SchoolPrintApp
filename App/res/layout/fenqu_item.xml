@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/group_item_bg_selector" >
+    
+	<ImageView 
+	    android:id="@+id/indicator"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="10dp"/>
+	<TextView 
+	    android:id="@+id/fenqu_num"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/indicator"
+	    android:layout_centerVertical="true"
+	    android:textSize="@dimen/text_size"
+	    android:textColor="@color/color_black"/>
+	<Button 
+	    android:id="@+id/send_btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:clickable="true"
+	    android:focusable="false"
+	    android:textColor="@color/color_white"
+	    android:text="@string/yes"
+	    android:layout_margin="6dp"
+	    android:background="@drawable/general_agent_send_btn_selector"/>
+	
+	<ProgressBar
+		    android:id="@+id/progress"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="15dp"
+		    style="@android:style/Widget.ProgressBar.Inverse"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:layout_centerVertical="true"
+			android:visibility="gone"/>
+</RelativeLayout>
